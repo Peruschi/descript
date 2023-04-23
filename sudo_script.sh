@@ -25,7 +25,7 @@ dnf update
 dnf install -y \
 	git \
 	discord \
-	vim code bat \
+	vim bat \
 	htop neofetch \
 	timeshift
 
