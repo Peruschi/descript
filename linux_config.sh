@@ -15,5 +15,5 @@ dnf install -y \
 
 # install some rust software
 curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
-rustup update
+source $HOME/.cargo/env
 
