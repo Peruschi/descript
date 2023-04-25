@@ -1,2 +1,2 @@
 # descript
-fedora descript
+fedora script
