@@ -16,8 +16,3 @@ dnf install -y 	glibc-static
 dnf install -y	ncurses-devel binutils
 # c2rust
 dnf install -y	clang llvm
-
-# install some rust software
-curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
-source $HOME/.cargo/env
-
