@@ -9,9 +9,8 @@
 
 # install some software
 dnf install -y \
-	busybox \
 	qemu \
-	gcc gdb clang make cmake llvm kernel-devel ncurses-devel elfutils-libelf-devel bison flex \
+	gcc gdb clang make llvm ncurses-devel
 
 # install some rust software
 curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh

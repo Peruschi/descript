@@ -8,8 +8,8 @@
 # 	sudo ./sudo_script.sh
 
 # add to dnf config file
-echo "fastestmirror=True" >> /etc/dnf/dnf.conf
-echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
+# echo "fastestmirror=True" >> /etc/dnf/dnf.conf
+# echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
 
 # enable rpmfusion
 sudo dnf install -y \
@@ -23,20 +23,20 @@ dnf update
 
 # install some software
 dnf install -y \
-	git \
 	discord \
 	vim bat tree \
 	htop neofetch \
 	timeshift
 
 # add flathub
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # update flatpak
-flatpak update
+# flatpak update
 
 
 # Notice
 echo "Notice:"
-echo "timeshift need to manually configure timeshift !!!"
+echo "Timeshift: need to manually configure timeshift !!!"
+echo "Discord: need to manually log in !!!"
 echo ""
