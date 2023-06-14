@@ -13,6 +13,6 @@ dnf install -y	gcc gdb make glibc
 # busybox
 dnf install -y 	glibc-static
 # linux
-dnf install -y	ncurses-devel binutils
+dnf install -y	kernel-devel ncurses-devel binutils
 # c2rust
-dnf install -y	clang llvm
+dnf install -y	clang llvm lld

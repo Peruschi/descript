@@ -13,7 +13,7 @@ echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
 
 # enable rpmfusion
 sudo dnf install -y \
-     	https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+	https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install -y \
 	https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
@@ -25,11 +25,12 @@ dnf update
 dnf install -y \
 	discord \
 	vim bat tree \
+	mpv vlc ffmpeg\
 	htop neofetch lshw\
 	timeshift
 
 # add flathub
- flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # update flatpak
 flatpak update
