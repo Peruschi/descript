@@ -1,5 +1,6 @@
 mkdir -pv {bin, sbin, etc, dev, proc, sys, mnt, tmp, usr/{bin,sbin}}
 
+
 touch etc/fstab
 echo "
 # <file system>	<mount point>	<type>	<optios>	<dump>	<pass>
@@ -32,5 +33,6 @@ console::askfirst:-/bin/sh
 ::shutdown:/bin/umount -a -r
 ::shutdown:/sbin/swapoff -a
 " >> etc/inittab
+
 
 find . -print0 | cpio --null --format=newc -ov | gzip -9 > ../ramdisk.img

@@ -7,6 +7,7 @@
 # 	chmod +x linux_config.sh
 # 	sudo ./linux_config.sh
 
+
 # install some software
 # default
 dnf install -y	gcc gdb make glibc
